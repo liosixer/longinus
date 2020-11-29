@@ -1,0 +1,64 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 垂直居中靠左 */
+.center-vertical-left {
+  @include flex-column();
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* 垂直居中靠右 */
+.center-vertical-right {
+  @include flex-column();
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* 垂直居中 */
+.center-vertical {
+  @include flex-column();
+  align-items: center;
+  justify-content: center;
+}
+
+/* 水平居中每个项目 */
+.center-horizonal-center {
+  @include flex-row();
+  align-items: center;
+  justify-content: center;
+}
+
+/* 水平居中每个项目两侧的间隔相等 */
+.center-horizonal-space-around {
+  @include flex-row();
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 水平居中每个项目两侧的间隔相等 */
+.center-horizonal-space-between {
+  @include flex-row();
+  align-items: center;
+  justify-content: space-between;
+}
+/* 水平居中每个项目两侧的间隔相等 */
+.center-horizonal-flex-start {
+  @include flex-row();
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 水平居中每个项目两侧的间隔相等 */
+.center-horizonal-flex-end {
+  @include flex-row();
+  justify-content: flex-end;
+  align-items: center;
+}
