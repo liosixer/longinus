@@ -11,14 +11,14 @@ class GetAttachments extends IGetAttachments {
      * @param type 上传类型（参考Upload的参数）
      * **/
     async getAttachments(groupGuid, type=1){
-        if (!groupGuid) return [];
-        let attachments = [];
-        const result = await util.getFiles(groupGuid, type);
-        if (result) {
-            attachments = Object.assign([], result);
-            return attachments;
-        }
-        return attachments;
+        // if (!groupGuid) return [];
+        // let attachments = [];
+        // const result = await util.getFiles(groupGuid, type);
+        // if (result) {
+        //     attachments = Object.assign([], result);
+        //     return attachments;
+        // }
+        return [];
     }
 }
 
