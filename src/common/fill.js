@@ -1,5 +1,5 @@
-import utils from "../../utils";
 import { IFill } from "../interface";
+import { assign_properties } from "../utils";
 /** 填充数据 **/
 class Fill extends IFill {
     constructor(){
@@ -7,7 +7,7 @@ class Fill extends IFill {
     }
 
     fill(source = {}){
-        utils.assignProperties(this, source);
+        assign_properties(this, source);
     }
 
 }
